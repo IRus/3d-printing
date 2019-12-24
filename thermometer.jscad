@@ -7,7 +7,7 @@
 
 // all in mm
 
-var quality = 1024;
+var quality = 128;
 
 var base = {
     radius: 50,
