@@ -1,6 +1,7 @@
 # 3D models for printing
 
-[Bicycle] Front mudguard mount on brake-bosses.
+* [Front mudguard mount on brake-bosses](front-mudguard-mount-on-brake-bosses.jscad)
+* [Thermometer holder](thermometer-holder.jscad)
 
 ## Links
 
