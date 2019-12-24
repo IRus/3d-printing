@@ -3,7 +3,7 @@
 // license    : GPLv3
 // revision   : 0.001
 // tags       : Thermometer,Holder
-// file       : thermometer.jscad
+// file       : thermometer-holder.jscad
 
 // all in mm
 
