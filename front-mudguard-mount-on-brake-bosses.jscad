@@ -3,7 +3,7 @@
 // license    : GPLv3
 // revision   : 0.001
 // tags       : Mudguard,Brakeboss
-// file       : front.jscad
+// file       : front-mudguard-mount-on-brake-bosses.jscad
 
 function main () {
   return [
@@ -13,12 +13,16 @@ function main () {
   ];
 }
 
+var config = {
+    quality: 128
+};
+
 function brakeBoss(x, y, z) {
   var height = 30;    
     
   var v1 = difference(
-    cylinder({r: 12, h: height}),
-    cylinder({r:  8, h: height})
+    cylinder({r: 12, h: height, fn: config.quality}),
+    cylinder({r:  8, h: height, fn: config.quality})
   );
   
   return translate([x, y, z], difference(
