@@ -19,15 +19,23 @@ var config = {
 };
 
 function brakeBoss(x, y, z) {
-  var height = 30;    
-    
-  var v1 = difference(
+  var height = 22;
+
+  var innerHeight = 5;
+  var innerRadius = 10.5;
+
+  var outer = difference(
     cylinder({r: 12, h: height, fn: config.quality}),
-    cylinder({r:  8, h: height, fn: config.quality})
+    cylinder({r:  8.5, h: height, fn: config.quality})
   );
   
+  var withInner = difference(
+      outer,
+      cylinder({r: innerRadius, h: innerHeight, fn: config.quality})
+  );
+
   return translate([x, y, z], difference(
-    v1,
+    withInner,
     cylinder({r: 10, h:  2})
   ));
 }
